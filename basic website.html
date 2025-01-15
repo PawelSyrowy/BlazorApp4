@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .title-section-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .title-section-content-wrapper {
+            border: 1px solid red;
+            text-align: left;
+        }
+
+        .section-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 5rem 5rem 5rem 5rem;
+        }
+
+        .container-column {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container-horizontal {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .text-container {
+            border: 1px solid red;
+            text-align: left;
+        }
+
+        .big-image-container {
+            max-width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            gap: 5rem;
+            flex-direction: row;
+        }
+
+        .heading-wrapper {
+            width: 100%;
+            display: flex;
+            text-align: left;
+            position: relative;
+            justify-content: start;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /*new styles*/
+        /*home sections styles*/
+
+        .home-section {
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .home-content {
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+
+        .box-align-left {
+            text-align: left;
+        }
+
+        .box-align-center {
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .box-justify-between {
+            width: 100%;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0 2rem 0;
+        "
+        }
+
+        .transform-button {
+            background-color: white;
+            color: #1C7287;
+            border: 2px solid #238EA9;
+            border-radius: 12px;
+            padding: 25px 125px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .transform-button:hover {
+            background-color: #88D4E7;
+            color: #1C7287;
+            transform: scale(1.02);
+        }
+
+        .home-image {
+            max-width: 40%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /*sections styles*/
+
+        .normal-section {
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .normal-section-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin: 5rem 5rem 5rem 5rem;
+        "
+        }
+
+        .normal-section-column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .normal-box-align-left {
+            padding: 0 0 1.5rem 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        .normal-box-column {
+            width: 100%;
+            display: flex;
+            text-align: left;
+            position: relative;
+            justify-content: start;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .normal-box-table {
+            width: 100%;
+            padding: 2rem 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<section id="home" class="home-section" style="background-color: #238EA9;">
+    <div class="home-content">
+        <div class="box-align-left">
+            <div style="padding: 2rem 0 2rem 0;">
+                <div style="padding: 1.2rem 0 1.2rem 0;">
+                    <h1 style="font-size: 96px; color: #88D4E7; font-weight: bold;">Sprzątanie?</h1>
+                    <h1 style="font-size: 96px; color: #FFFFFF; font-weight: bold;">Nic prostszego.</h1>
+                </div>
+                <div style="padding: 1.2rem 0 1.2rem 0;">
+                    <p style="font-size: 24px; color: #FFFFFF; font-weight: lighter; opacity: 50%">
+                        Twój pomocnik w codziennym utrzymywaniu czystości w domu</p>
+                </div>
+            </div>
+            <div class="box-align-center">
+                <div class="box-justify-between">
+                    <button class="transform-button" onclick="alert('Button clicked!')">Zaczynajmy</button>
+                    <img src="logo.png" alt="logo"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="home-image" src="img1.png" alt="banner"/>
+</section>
+
+<section class="normal-section" style="background-color: #FFFFFF;">
+    <div class="normal-section-content">
+        <div class="normal-section-column">
+            <div class="normal-box-align-left">
+                <div class="normal-box-column">
+                    <h2 style="font-size: 72px; color: #1C7287; font-weight: bold;">Sprzątanie może być fajne</h2>
+                    <p style="font-size: 24px; color: #828889; font-weight: lighter">
+                        Zrobiliśmy wszystko co w naszej mocy, aby pomóc ci w skutecznym zarządzaniu sprzątaniem twojego
+                        domu.
+                        A do tego sprawiliśmy, że to nawet zabawne!</p>
+                </div>
+            </div>
+            <div class="normal-box-table">
+                <table style="width: 100%; border-collapse: separate; text-align: center; border-spacing: 2rem 0;">
+                    <thead>
+                    <tr>
+                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #88D4E7; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                            <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Utrzymuj
+                                dom w czystości</h3>
+                        </th>
+                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #88D4E7; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                            <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Działaj w
+                                zespole</h3>
+                        </th>
+                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #88D4E7; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                            <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Zamień
+                                sprzątanie w grę</h3>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-bottom: none; border-top: none;">
+                            <img src="feature1.png" alt="feature1" style="object-fit: fill;"/>
+                        </td>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-bottom: none; border-top: none;">
+                            <img src="feature2.png" alt="feature2" style="object-fit: fill;"/>
+                        </td>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-bottom: none; border-top: none;">
+                            <img src="feature3.png" alt="feature3" style="object-fit: fill;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                            <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
+                                Wskaźniki które reprezentują obszary twojego domu, pomogą ci utrzymać wszystko w
+                                czystości.
+                            </p>
+                        </td>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                            <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
+                                <b style="color: #1C7287">Cleantisy</b> jest dla wszystkich domowników! Zaplanuj zadania
+                                uwzględniając wasze harmonogramy.
+                                Śledź zaangażowanie i zadbaj o uczciwy podział obowiązków.
+                            </p>
+                        </td>
+                        <td style="padding: 1.2rem 0; border: 0.1rem solid #88D4E7; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                            <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
+                                Sprzątanie nie musi być nudne.
+                                Zrób z tego zabawę i nigdy więcej nie odkładaj już obowiązków na potem.
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<a href="#home">content</a>-->
+
+<div class="section-wrapper" style="background-color: #238EA9; aspect-ratio: 1.77 / 1 ">
+    <div class="container-column">
+        <div class="text-container">
+            <div class="heading-wrapper">
+                <h1 style="font-size: 72px; color: #FFFFFF; font-weight: bold;">Trzy kroki do czystego domu</h1>
+                <p style="font-size: 24px; color: #AAE0EE; font-weight: lighter"> Oto jak pomożemy ci w tym procesie</p>
+            </div>
+            <div class="feature-container">
+                <div class="container-column"
+                     style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">
+                    <img src="chair.png"/>
+                    <h1>Wprowadź pomieszczenia i obszary</h1>
+                    <p>Zaczniemy od rozpisania wszystkich pomieszczeń w twoim domu oraz obszarów, które wymagają uwagi.
+                        Bez obaw, mamy mnóstwo szablonów, które to przyspieszą!</p>
+                </div>
+                <div class="container-column"
+                     style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">
+                    <img src="accessibility.png"/>
+                    <h1>Zaproś domowników i ustal harmonogramy</h1>
+                    <p>Wyślemy zaproszenia do wszystkich lokatorów i wstawimy ich do harmonogramu. Dzięki temu każdy
+                        będzie mógł działać wtedy, kiedy ma na to czas!</p>
+                </div>
+                <div class="container-column"
+                     style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">
+                    <img src="add_task.png"/>
+                    <h1>Zaplanuj zadania</h1>
+                    <p>Cleantisy Planer zrobi wszystko za ciebie. Bazując na obszarach i harmonogramach, wygeneruje dla
+                        każdego domownika zestaw zadań do wykonania na każdy dzień. Oczywiście w razie potrzeby będziesz
+                        mógł dokonać dowolnych modyfikacji!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--    <div class="section-wrapper" style="background-color: #FFFFFF; aspect-ratio: 2.43 / 1 ">-->
+<!--        <div class="container-column">-->
+<!--            <div class="text-container">-->
+<!--                <h1>Oto co mówią nasi użytkownicy</h1>-->
+<!--                <p>My możemy się chwalić Cleantisy cały dzień, ale najważniejsze i tak jest to, co myślą nasi użytkownicy</p>-->
+<!--                <div class="feature-container">-->
+<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
+<!--                        <img src="photo1.png" />-->
+<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
+<!--                            <h1>Alice Johnson</h1>-->
+<!--                            <p>Nigdy nie wiedziałam, że utrzymanie czystości w domu może być takie proste! Ta aplikacja naprawdę uprościła moją rutynę sprzątania.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
+<!--                        <img src="photo2.png" />-->
+<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
+<!--                            <h1>David Smith</h1>-->
+<!--                            <p>Uwielbiam, jak zorganizowana i wydajna jest ta aplikacja. Dzięki niej zarządzanie moimi zadaniami związanymi ze sprzątaniem stało się dziecinnie proste.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
+<!--                        <img src="photo3.png" />-->
+<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
+<!--                            <h1>Emily Brown</h1>-->
+<!--                            <p>Korzystanie z tej aplikacji zaoszczędziło mi mnóstwo czasu i wysiłku. Gorąco polecam ją każdemu, kto chce usprawnić proces czyszczenia.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="section-wrapper" style="background-color: #238EA9; aspect-ratio: 1.51 / 1 ">-->
+<!--        <div class="container-column">-->
+<!--            <div class="text-container" style="text-align: center; align-items: center">-->
+<!--                <h1>Plany</h1>-->
+<!--                <p>Możesz korzystać z kluczowych funkcjonalności Cleantisy zupełnie za darmo. Jeśli chcesz odblokować pełnie potencjału, przedstawiamy ci ulepszoną wersję PRO.</p>-->
+<!--                <div class="feature-container">-->
+<!--                    <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
+<!--                        <h1>Podstawy</h1>-->
+<!--                        <ul>-->
+<!--                            <li>Podstawowe funkcjonalności aplikacji</li>-->
+<!--                            <li>together (Moduł Kolaboracji + Maks. ilość domowników: 2)</li>-->
+<!--                            <li>Moduł Kalendarza</li>-->
+<!--                            <li><del>Moduł Grywalizacji</del></li>-->
+<!--                            <li><del>Cleantisy Planer</del></li>-->
+<!--                        </ul>-->
+<!--                        <hr style="width: 100%; border: 1px solid #000; margin: 1rem 0;">-->
+<!--                        <h1><bold>darmowa</bold></h1>-->
+<!--                    </div>-->
+<!--                    <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
+<!--                        <h1><bold>Pro</bold></h1>-->
+<!--                        <p>JEDNORAZOWA OPŁATA</p>-->
+<!--                        <p>miesiąc próbny za darmo</p>-->
+<!--                        <ul>-->
+<!--                            <li>Podstawowe funkcjonalności aplikacji</li>-->
+<!--                            <li>together (Moduł Kolaboracji + Maks. ilość domowników: 2)</li>-->
+<!--                            <li>Moduł Kalendarza</li>-->
+<!--                            <li>Moduł Grywalizacji</li>-->
+<!--                            <li>Cleantisy Planer</li>-->
+<!--                        </ul>-->
+<!--                        <hr style="width: 100%; border: 1px solid #000; margin: 1rem 0;">-->
+<!--                        <h1><bold>18,99 zł</bold></h1>-->
+<!--                        <p>per gospodarstwo domowe</p>-->
+<!--                        <p>W Cleantisy nie uznajemy subskrypcji i abonamentów. Oddajemy ci tę aplikację w pełni, na zawsze za jednorazową opłatą.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="section-wrapper" style="background-color: #1C7287; aspect-ratio: 4.06 / 1 ">-->
+<!--        <div class="container-column">-->
+<!--            <h1>Pobierz teraz</h1>-->
+<!--            <button onclick="alert('Button clicked!')">Spraw, żeby sprzątanie domu było proste</button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="section-wrapper" style="background-color: #155566; aspect-ratio: 15 / 1 ">-->
+<!--        <div class="container-horizontal">-->
+<!--            <img src="logo.png" />-->
+<!--            <p>Farlime Solutions 2025</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+</body>
+</html>
+
