@@ -24,81 +24,7 @@
             font-family: 'Inter', sans-serif;
         }
 
-        .title-section-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        .title-section-content-wrapper {
-            border: 1px solid red;
-            text-align: left;
-        }
-
-        .section-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            padding: 5rem 5rem 5rem 5rem;
-        }
-
-        .container-column {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            position: relative;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .container-horizontal {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            position: relative;
-            justify-content: space-between;
-            flex-direction: row;
-        }
-
-        .text-container {
-            border: 1px solid red;
-            text-align: left;
-        }
-
-        .big-image-container {
-            max-width: 50%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .feature-container {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            position: relative;
-            justify-content: center;
-            gap: 5rem;
-            flex-direction: row;
-        }
-
-        .heading-wrapper {
-            width: 100%;
-            display: flex;
-            text-align: left;
-            position: relative;
-            justify-content: start;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        /*new styles*/
-        /*home sections styles*/
+        /*home section styles*/
 
         .home-section {
             width: 100%;
@@ -136,6 +62,7 @@
         }
 
         .transform-button {
+            text-decoration: none;
             margin-left: 1rem;
             background-color: white;
             color: #1C7287;
@@ -175,7 +102,6 @@
             flex-direction: row;
             position: relative;
             margin: 5rem 5rem 5rem 5rem;
-        "
         }
 
         .normal-section-column {
@@ -222,6 +148,79 @@
             z-index: 1;
         }
 
+        .normal-box-card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            justify-content: start;
+            align-self: flex-start;
+            border-radius: 2rem;
+            border: 2px solid #AAE0EE;
+            background-color: #FFFFFF;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .list-item {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.2px;
+            letter-spacing: -0.04em;
+            text-align: left;
+            margin-bottom: 2rem;
+            color: #030E11;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .list-item::before {
+            content: attr(data-mark);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+        }
+
+        .list-item-special-1::after,
+        .list-item-special-2::after {
+            content: attr(data-extra);
+            display: block;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.2px;
+            letter-spacing: -0.04em;
+            color: #9EA2A4;
+            margin-top: 0.5rem;
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .transform-button-ending {
+            text-decoration: none;
+            margin-left: 1rem;
+            background-color: white;
+            color: #1C7287;
+            border: 2px solid #238EA9;
+            border-radius: 12px;
+            padding: 25px 100px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: crosshair !important;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            width: auto;
+        }
+
+        .transform-button-ending:hover {
+            background-color: #88D4E7;
+            color: #1C7287;
+            transform: scale(1.01);
+        }
+
+        /*footer section styles*/
+
     </style>
 </head>
 <body>
@@ -241,7 +240,7 @@
             </div>
             <div class="box-align-center">
                 <div class="box-justify-between">
-                    <button class="transform-button" onclick="alert('Button clicked!')">Zaczynajmy</button>
+                    <a href="#start" class="transform-button">Zaczynajmy</a>
                     <img src="logo.png" alt="logo"/>
                 </div>
             </div>
@@ -250,7 +249,7 @@
     <img class="home-image" src="img1.png" alt="banner"/>
 </section>
 
-<section class="normal-section" style="background-color: #FFFFFF;">
+<section id="start" class="normal-section" style="background-color: #FFFFFF;">
     <div class="normal-section-content">
         <div class="normal-section-column">
             <div class="normal-box-align-left">
@@ -472,92 +471,114 @@
     </div>
 </section>
 
-<!--<a href="#home">content</a>-->
+<section class="normal-section" style="background-color: #238EA9;">
+    <div class="normal-section-content">
+        <div class="normal-section-column">
+            <div class="normal-box-align-left">
+                <div class="normal-box-column" style="text-align: center;">
+                    <h2 style="font-size: 72px; color: #FFFFFF; font-weight: bold;">Plany</h2>
+                    <p style="font-size: 24px; color: #CCEDF5; font-weight: lighter; align-self: center; width: 40%;">
+                        Możesz korzystać z kluczowych funkcjonalności Cleantisy zupełnie za darmo. Jeśli chcesz
+                        odblokować pełnie potencjału, przedstawiamy ci ulepszoną wersję PRO.</p>
+                </div>
+            </div>
+            <div style="            
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    justify-content: space-between;
+                    margin-top: 2rem">
+                <div class="normal-box-card">  
+                    <h2 style="font-size: 40px; color: #45BBD9; font-weight: normal; margin-top: 2rem; margin-bottom: 3rem">
+                        Podstawowy</h2>
 
-<!--    <div class="section-wrapper" style="background-color: #FFFFFF; aspect-ratio: 2.43 / 1 ">-->
-<!--        <div class="container-column">-->
-<!--            <div class="text-container">-->
-<!--                <h1>Oto co mówią nasi użytkownicy</h1>-->
-<!--                <p>My możemy się chwalić Cleantisy cały dzień, ale najważniejsze i tak jest to, co myślą nasi użytkownicy</p>-->
-<!--                <div class="feature-container">-->
-<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
-<!--                        <img src="photo1.png" />-->
-<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
-<!--                            <h1>Alice Johnson</h1>-->
-<!--                            <p>Nigdy nie wiedziałam, że utrzymanie czystości w domu może być takie proste! Ta aplikacja naprawdę uprościła moją rutynę sprzątania.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
-<!--                        <img src="photo2.png" />-->
-<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
-<!--                            <h1>David Smith</h1>-->
-<!--                            <p>Uwielbiam, jak zorganizowana i wydajna jest ta aplikacja. Dzięki niej zarządzanie moimi zadaniami związanymi ze sprzątaniem stało się dziecinnie proste.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="container-horizontal" style="align-items: flex-start;">-->
-<!--                        <img src="photo3.png" />-->
-<!--                        <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
-<!--                            <h1>Emily Brown</h1>-->
-<!--                            <p>Korzystanie z tej aplikacji zaoszczędziło mi mnóstwo czasu i wysiłku. Gorąco polecam ją każdemu, kto chce usprawnić proces czyszczenia.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+                    <ul style="list-style-type: none; padding: 0; margin: 0; align-self: center">
+                        <li class="list-item" data-mark="✅">Podstawowe funkcjonalności aplikacji</li>
+                        <li class="list-item list-item-special-1" data-mark="✅" data-extra="Maks. ilość domowników: 2">Moduł Kolaboracji</li>
+                        <li class="list-item" data-mark="✅">Moduł Kalendarza</li>
+                        <li class="list-item" data-mark="❌">Moduł Grywalizacji</li>
+                        <li class="list-item" data-mark="❌">Cleantisy Planer</li>
+                    </ul>
 
-<!--    <div class="section-wrapper" style="background-color: #238EA9; aspect-ratio: 1.51 / 1 ">-->
-<!--        <div class="container-column">-->
-<!--            <div class="text-container" style="text-align: center; align-items: center">-->
-<!--                <h1>Plany</h1>-->
-<!--                <p>Możesz korzystać z kluczowych funkcjonalności Cleantisy zupełnie za darmo. Jeśli chcesz odblokować pełnie potencjału, przedstawiamy ci ulepszoną wersję PRO.</p>-->
-<!--                <div class="feature-container">-->
-<!--                    <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
-<!--                        <h1>Podstawy</h1>-->
-<!--                        <ul>-->
-<!--                            <li>Podstawowe funkcjonalności aplikacji</li>-->
-<!--                            <li>together (Moduł Kolaboracji + Maks. ilość domowników: 2)</li>-->
-<!--                            <li>Moduł Kalendarza</li>-->
-<!--                            <li><del>Moduł Grywalizacji</del></li>-->
-<!--                            <li><del>Cleantisy Planer</del></li>-->
-<!--                        </ul>-->
-<!--                        <hr style="width: 100%; border: 1px solid #000; margin: 1rem 0;">-->
-<!--                        <h1><bold>darmowa</bold></h1>-->
-<!--                    </div>-->
-<!--                    <div class="container-column" style="gap: 2rem; text-align: left; align-items: flex-start; align-content: flex-start">-->
-<!--                        <h1><bold>Pro</bold></h1>-->
-<!--                        <p>JEDNORAZOWA OPŁATA</p>-->
-<!--                        <p>miesiąc próbny za darmo</p>-->
-<!--                        <ul>-->
-<!--                            <li>Podstawowe funkcjonalności aplikacji</li>-->
-<!--                            <li>together (Moduł Kolaboracji + Maks. ilość domowników: 2)</li>-->
-<!--                            <li>Moduł Kalendarza</li>-->
-<!--                            <li>Moduł Grywalizacji</li>-->
-<!--                            <li>Cleantisy Planer</li>-->
-<!--                        </ul>-->
-<!--                        <hr style="width: 100%; border: 1px solid #000; margin: 1rem 0;">-->
-<!--                        <h1><bold>18,99 zł</bold></h1>-->
-<!--                        <p>per gospodarstwo domowe</p>-->
-<!--                        <p>W Cleantisy nie uznajemy subskrypcji i abonamentów. Oddajemy ci tę aplikację w pełni, na zawsze za jednorazową opłatą.</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+                    <div style="
+                        width: 501px;
+                        height: 0px;
+                        border-top: 1px solid #9EA2A4;
+                        opacity: 1;
+                        margin-left: 1.8rem; 
+                        margin-right: 1.8rem;
+                        margin-top: 0.5rem">
+                    </div>
 
-<!--    <div class="section-wrapper" style="background-color: #1C7287; aspect-ratio: 4.06 / 1 ">-->
-<!--        <div class="container-column">-->
-<!--            <h1>Pobierz teraz</h1>-->
-<!--            <button onclick="alert('Button clicked!')">Spraw, żeby sprzątanie domu było proste</button>-->
-<!--        </div>-->
-<!--    </div>-->
+                    <h2 style="font-size: 48px; color: #45BBD9; font-weight: normal; margin: 2rem auto 2rem;">darmowa</h2>
+                </div>
+                <div class="normal-box-card">
+                    <h2 style="font-size: 40px; color: #45BBD9; font-weight: bold; margin-top: 2rem; margin-bottom: 3rem">
+                        Pro</h2>
+                    <h3 style="font-size: 20px; color: #45BBD9; font-weight: bold; margin: 0.2rem">JEDNORAZOWA
+                        OPŁATA</h3>
+                    <p style="font-size: 20px; color: #030E11; font-weight: normal; margin-top: 0.2rem; margin-bottom: 2rem">miesiąc próbny za
+                        darmo</p>
 
-<!--    <div class="section-wrapper" style="background-color: #155566; aspect-ratio: 15 / 1 ">-->
-<!--        <div class="container-horizontal">-->
-<!--            <img src="logo.png" />-->
-<!--            <p>Farlime Solutions 2025</p>-->
-<!--        </div>-->
-<!--    </div>-->
+                    <ul style="list-style-type: none; padding: 0; margin: 0; align-self: center">
+                        <li class="list-item" data-mark="✅">Podstawowe funkcjonalności aplikacji</li>
+                        <li class="list-item list-item-special-2" data-mark="✅" data-extra="Maks. ilość domowników: 64">Moduł Kolaboracji</li>
+                        <li class="list-item" data-mark="✅">Moduł Kalendarza</li>
+                        <li class="list-item" data-mark="❌">Moduł Grywalizacji</li>
+                        <li class="list-item" data-mark="❌">Cleantisy Planer</li>
+                    </ul>
+                    
+                    <div style="
+                        width: 501px;
+                        height: 0px;
+                        border-top: 1px solid #9EA2A4;
+                        opacity: 1;
+                        margin-left: 1.8rem; 
+                        margin-right: 1.8rem;
+                        margin-top: 0.5rem">
+                    </div>
+
+                    <h2 style="font-size: 64px; color: #45BBD9; font-weight: bold; margin-top: 2rem">18,99 zł</h2>
+                    <h3 style="font-size: 24px; color: #45BBD9; font-weight: normal; margin-bottom: 2rem">per gospodarstwo domowe</h3>
+                    <p style="
+                        font-size: 20px; 
+                        color: #828889; 
+                        font-weight: normal; 
+                        width: 501px; 
+                        margin: 0 auto 2rem; 
+                        text-align: center;">
+                        W Cleantisy nie uznajemy subskrypcji i abonamentów. Oddajemy ci tę aplikację w pełni, na zawsze
+                        za jednorazową opłatą.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="normal-section" style="background-color: #1C7287;">
+    <div class="normal-section-content">
+        <div class="normal-section-column">
+            <div class="normal-box-align-left">
+                <div class="normal-box-column" style="text-align: center;">
+                    <h2 style="font-size: 72px; color: #FFFFFF; font-weight: bold; margin-bottom: 1rem">Pobierz teraz</h2>
+                    <div>
+                        <a href="#home" class="transform-button-ending">Spraw, żeby sprzątanie domu było proste</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section" style="background-color: #155566; padding: 1.5rem 5rem; display: flex; justify-content: space-between; align-items: center; width: 100%">
+    <div class="footer-logo">
+        <img src="logo.png" alt="Farlime Solutions Logo" style="height: 50px;">
+    </div>
+    <div class="footer-text" style="font-family: 'Roboto Mono', monospace; font-size: 20px; font-weight: 400; line-height: 26.38px; letter-spacing: -0.04em; text-align: center; color: #45BBD9; text-underline-position: from-font; text-decoration-skip-ink: none;">
+        Farlime Solutions 2025
+    </div>
+</footer>
 
 </body>
 </html>
