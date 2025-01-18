@@ -5,223 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            cursor: progress !important;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Inter', sans-serif;
-        }
-
-        /*home section styles*/
-
-        .home-section {
-            width: 100%;
-            display: flex;
-            position: relative;
-            align-items: center;
-        }
-
-        .home-content {
-            width: 100%;
-            display: flex;
-            position: relative;
-            justify-content: center;
-        }
-
-        .box-align-left {
-            text-align: left;
-        }
-
-        .box-align-center {
-            width: 100%;
-            display: flex;
-            position: relative;
-            align-items: center;
-        }
-
-        .box-justify-between {
-            width: 100%;
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2rem 0 2rem 0;
-        "
-        }
-
-        .transform-button {
-            text-decoration: none;
-            margin-left: 1rem;
-            background-color: white;
-            color: #1C7287;
-            border: 2px solid #238EA9;
-            border-radius: 12px;
-            padding: 25px 125px;
-            font-size: 24px;
-            font-weight: bold;
-            cursor: crosshair !important;
-            transition: all 0.3s ease;
-        }
-
-        .transform-button:hover {
-            background-color: #88D4E7;
-            color: #1C7287;
-            transform: scale(1.01);
-        }
-
-        .home-image {
-            max-width: 40%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        /*sections styles*/
-
-        .normal-section {
-            width: 100%;
-            display: flex;
-            position: relative;
-        }
-
-        .normal-section-content {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            margin: 5rem 5rem 5rem 5rem;
-        }
-
-        .normal-section-column {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-
-        .normal-box-align-left {
-            padding: 0 0 1.5rem 0;
-            width: 100%;
-            text-align: left;
-        }
-
-        .normal-box-column {
-            width: 100%;
-            display: flex;
-            text-align: left;
-            position: relative;
-            justify-content: start;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .normal-box-table {
-            width: 100%;
-            padding: 2rem 0 0 0;
-        }
-
-        .circle-number {
-            width: 82px;
-            height: 82px;
-            border-radius: 50%;
-            background-color: #88D4E7;
-            color: #FFFFFF;
-            font-size: 28px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .normal-box-card {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            position: relative;
-            justify-content: start;
-            align-self: flex-start;
-            border-radius: 2rem;
-            border: 2px solid #AAE0EE;
-            background-color: #FFFFFF;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-
-        .list-item {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24.2px;
-            letter-spacing: -0.04em;
-            text-align: left;
-            margin-bottom: 2rem;
-            color: #030E11;
-            position: relative;
-            padding-left: 2rem;
-        }
-
-        .list-item::before {
-            content: attr(data-mark);
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 20px;
-        }
-
-        .list-item-special-1::after,
-        .list-item-special-2::after {
-            content: attr(data-extra);
-            display: block;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 24.2px;
-            letter-spacing: -0.04em;
-            color: #9EA2A4;
-            margin-top: 0.5rem;
-            text-align: left;
-            margin-left: 0;
-        }
-
-        .transform-button-ending {
-            text-decoration: none;
-            margin-left: 1rem;
-            background-color: white;
-            color: #1C7287;
-            border: 2px solid #238EA9;
-            border-radius: 12px;
-            padding: 25px 100px;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: crosshair !important;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-align: center;
-            width: auto;
-        }
-
-        .transform-button-ending:hover {
-            background-color: #88D4E7;
-            color: #1C7287;
-            transform: scale(1.01);
-        }
-
-        /*footer section styles*/
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -239,7 +24,7 @@
                 </div>
             </div>
             <div class="box-align-center">
-                <div class="box-justify-between">
+                <div class="box-justify-between" style="padding: 2rem 0 2rem 0;">
                     <a href="#start" class="transform-button">Zaczynajmy</a>
                     <img src="logo.png" alt="logo"/>
                 </div>
@@ -262,18 +47,18 @@
                 </div>
             </div>
             <div class="normal-box-table">
-                <table style="width: 100%; border-collapse: separate; text-align: center; border-spacing: 2rem 0;">
+                <table class="normal-table">
                     <thead>
                     <tr>
-                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <th class="normal-table-row-value-top">
                             <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Utrzymuj
                                 dom w czystości</h3>
                         </th>
-                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <th class="normal-table-row-value-top">
                             <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Działaj w
                                 zespole</h3>
                         </th>
-                        <th style="padding: 1rem 0; width: 30%; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <th class="normal-table-row-value-top">
                             <h3 style="margin-top: 2rem; color: #1C7287; font-size: 40px; font-weight: bold; ">Zamień
                                 sprzątanie w grę</h3>
                         </th>
@@ -281,31 +66,31 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle">
                             <img src="feature1.png" alt="feature1" style="object-fit: fill;"/>
                         </td>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle">
                             <img src="feature2.png" alt="feature2" style="object-fit: fill;"/>
                         </td>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle">
                             <img src="feature3.png" alt="feature3" style="object-fit: fill;"/>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom">
                             <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
                                 Wskaźniki które reprezentują obszary twojego domu, pomogą ci utrzymać wszystko w
                                 czystości.
                             </p>
                         </td>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom">
                             <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
                                 <b style="color: #1C7287">Cleantisy</b> jest dla wszystkich domowników! Zaplanuj zadania
                                 uwzględniając wasze harmonogramy.
                                 Śledź zaangażowanie i zadbaj o uczciwy podział obowiązków.
                             </p>
                         </td>
-                        <td style="padding: 1.2rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom">
                             <p style="margin: 0 2rem 2rem; color: #828889; font-size: 24px;">
                                 Sprzątanie nie musi być nudne.
                                 Zrób z tego zabawę i nigdy więcej nie odkładaj już obowiązków na potem.
@@ -330,23 +115,23 @@
                 </div>
             </div>
             <div class="normal-box-table">
-                <table style="width: 100%; border-collapse: separate; text-align: center; border-spacing: 2rem 0;">
+                <table class="normal-table">
                     <thead>
                     <tr>
-                        <th style="padding-bottom: 1rem; width: 30%; position: relative; text-align: center;">
-                            <div style="display: flex; align-items: center; justify-content: left; position: relative;">
+                        <th class="normal-table-row-value-beyond-alternative">
+                            <div class="box-circle-number">
                                 <h3 class="circle-number">1</h3>
                                 <div style="position: absolute; top: 50%; left: 0; width: 110%; height: 2px; background-color: #AAE0EE;"></div>
                             </div>
                         </th>
-                        <th style="padding-bottom: 1rem; width: 30%; position: relative; text-align: center;">
-                            <div style="display: flex; align-items: center; justify-content: left; position: relative;">
+                        <th class="normal-table-row-value-beyond-alternative">
+                            <div class="box-circle-number">
                                 <h3 class="circle-number">2</h3>
                                 <div style="position: absolute; top: 50%; left: 0; width: 110%; height: 2px; background-color: #AAE0EE;"></div>
                             </div>
                         </th>
-                        <th style="padding-bottom: 1rem; width: 30%; position: relative; text-align: center;">
-                            <div style="display: flex; align-items: center; justify-content: left; position: relative;">
+                        <th class="normal-table-row-value-beyond-alternative">
+                            <div class="box-circle-number">
                                 <h3 class="circle-number">3</h3>
                                 <div style="position: absolute; top: 50%; left: 0; width: 100%; height: 2px; background-color: #AAE0EE;"></div>
                             </div>
@@ -355,44 +140,44 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-alternative">
                             <img src="chair.png" alt="chair" style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-alternative">
                             <img src="accessibility.png" alt="accessibility"
                                  style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-alternative">
                             <img src="add_task.png" alt="add_task" style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-alternative">
                             <h3 style="color: #FFFFFF; font-size: 40px; margin: 0 2rem 0 2rem;">Wprowadź pomieszczenia i
                                 obszary
                             </h3></td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-alternative">
                             <h3 style="color: #FFFFFF; font-size: 40px; margin: 0 2rem 0 2rem;">Zaproś domowników i
                                 ustal harmonogramy
                             </h3></td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-alternative">
                             <h3 style="color: #FFFFFF; font-size: 40px; margin: 0 2rem 0 2rem;">Zaplanuj zadania
                             </h3></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-alternative">
                             <p style="color: #AAE0EE; font-size: 24px; margin: 0 2rem 3rem 2rem;">Zaczniemy od
                                 rozpisania wszystkich pomieszczeń w twoim domu oraz obszarów, które wymagają uwagi. Bez
                                 obaw, mamy mnóstwo szablonów, które to przyspieszą!
                             </p>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-alternative">
                             <p style="color: #AAE0EE; font-size: 24px; margin: 0 2rem 3rem 2rem;">Wyślemy zaproszenia do
                                 wszystkich lokatorów i wstawimy ich do harmonogramu. Dzięki temu każdy będzie mógł
                                 działać wtedy, kiedy ma na to czas!
                             </p>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-alternative">
                             <p style="color: #AAE0EE; font-size: 24px; margin: 0 2rem 3rem 2rem;"><b>Cleantisy
                                 Planer</b> zrobi
                                 wszystko za ciebie. Bazując na obszarach i harmonogramach, wygeneruje dla każdego
@@ -419,45 +204,45 @@
                 </div>
             </div>
             <div class="normal-box-table">
-                <table style="width: 100%; border-collapse: separate; text-align: center; border-spacing: 2rem 0;">
+                <table class="normal-table">
                     <tbody>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-align-left">
                             <img src="photo1.png" alt="photo1" style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-align-left">
                             <img src="photo2.png" alt="photo2"
                                  style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top-left-radius: 1rem; border-top-right-radius: 1rem;">
+                        <td class="normal-table-row-value-top-align-left">
                             <img src="photo3.png" alt="photo3" style="object-fit: fill; margin: 3rem 2rem 0 2rem;"/>
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-align-left">
                             <h3 style="color: #1C7287; font-size: 20px; margin: 0 2rem 0 2rem;">Alice Johnson
                             </h3></td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-align-left">
                             <h3 style="color: #1C7287; font-size: 20px; margin: 0 2rem 0 2rem;">David Smith
                             </h3></td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-bottom: none; border-top: none;">
+                        <td class="normal-table-row-value-middle-align-left">
                             <h3 style="color: #1C7287; font-size: 20px; margin: 0 2rem 0 2rem;">Emily Brown
                             </h3></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-align-left">
                             <p style="color: #828889; font-size: 20px; margin: 0 2rem 3rem 2rem;">Nigdy nie wiedziałam,
                                 że utrzymanie czystości w domu może być takie proste! Ta aplikacja naprawdę uprościła
                                 moją rutynę sprzątania.
                             </p>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-align-left">
                             <p style="color: #828889; font-size: 20px; margin: 0 2rem 3rem 2rem;">Uwielbiam, jak
                                 zorganizowana i wydajna jest ta aplikacja. Dzięki niej zarządzanie moimi zadaniami
                                 związanymi ze sprzątaniem stało się dziecinnie proste.
                             </p>
                         </td>
-                        <td style="text-align: left; padding: 0.6rem 0; border: 0.1rem solid #AAE0EE; border-top: none; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;">
+                        <td class="normal-table-row-value-bottom-align-left">
                             <p style="color: #828889; font-size: 20px; margin: 0 2rem 3rem 2rem;">Korzystanie z tej
                                 aplikacji zaoszczędziło mi mnóstwo czasu i wysiłku. Gorąco polecam ją każdemu, kto chce
                                 usprawnić proces czyszczenia.
@@ -482,71 +267,50 @@
                         odblokować pełnie potencjału, przedstawiamy ci ulepszoną wersję PRO.</p>
                 </div>
             </div>
-            <div style="            
-                    display: flex;
-                    flex-direction: row;
-                    position: relative;
-                    justify-content: space-between;
-                    margin-top: 2rem">
-                <div class="normal-box-card">  
+            <div class=" normal-box-card">
+                <div class="normal-card">
                     <h2 style="font-size: 40px; color: #45BBD9; font-weight: normal; margin-top: 2rem; margin-bottom: 3rem">
                         Podstawowy</h2>
 
                     <ul style="list-style-type: none; padding: 0; margin: 0; align-self: center">
                         <li class="list-item" data-mark="✅">Podstawowe funkcjonalności aplikacji</li>
-                        <li class="list-item list-item-special-1" data-mark="✅" data-extra="Maks. ilość domowników: 2">Moduł Kolaboracji</li>
+                        <li class="list-item list-item-special-1" data-mark="✅" data-extra="Maks. ilość domowników: 2">
+                            Moduł Kolaboracji
+                        </li>
                         <li class="list-item" data-mark="✅">Moduł Kalendarza</li>
-                        <li class="list-item" data-mark="❌">Moduł Grywalizacji</li>
-                        <li class="list-item" data-mark="❌">Cleantisy Planer</li>
+                        <li class="list-item" style="color: #828889;" data-mark="❌">Moduł Grywalizacji</li>
+                        <li class="list-item" style="color: #828889;" data-mark="❌">Cleantisy Planer</li>
                     </ul>
 
-                    <div style="
-                        width: 501px;
-                        height: 0px;
-                        border-top: 1px solid #9EA2A4;
-                        opacity: 1;
-                        margin-left: 1.8rem; 
-                        margin-right: 1.8rem;
-                        margin-top: 0.5rem">
-                    </div>
-
-                    <h2 style="font-size: 48px; color: #45BBD9; font-weight: normal; margin: 2rem auto 2rem;">darmowa</h2>
+                    <div class="normal-horizontal-line"></div>
+                    <h2 style="font-size: 48px; color: #45BBD9; font-weight: normal; margin: 2rem auto 2rem;">
+                        darmowa</h2>
                 </div>
-                <div class="normal-box-card">
+                <div class="normal-card">
                     <h2 style="font-size: 40px; color: #45BBD9; font-weight: bold; margin-top: 2rem; margin-bottom: 3rem">
                         Pro</h2>
                     <h3 style="font-size: 20px; color: #45BBD9; font-weight: bold; margin: 0.2rem">JEDNORAZOWA
                         OPŁATA</h3>
-                    <p style="font-size: 20px; color: #030E11; font-weight: normal; margin-top: 0.2rem; margin-bottom: 2rem">miesiąc próbny za
+                    <p style="font-size: 20px; color: #030E11; font-weight: normal; margin-top: 0.2rem; margin-bottom: 2rem">
+                        miesiąc próbny za
                         darmo</p>
 
                     <ul style="list-style-type: none; padding: 0; margin: 0; align-self: center">
                         <li class="list-item" data-mark="✅">Podstawowe funkcjonalności aplikacji</li>
-                        <li class="list-item list-item-special-2" data-mark="✅" data-extra="Maks. ilość domowników: 64">Moduł Kolaboracji</li>
+                        <li class="list-item list-item-special-2" data-mark="✅" data-extra="Maks. ilość domowników: 64">
+                            Moduł Kolaboracji
+                        </li>
                         <li class="list-item" data-mark="✅">Moduł Kalendarza</li>
-                        <li class="list-item" data-mark="❌">Moduł Grywalizacji</li>
-                        <li class="list-item" data-mark="❌">Cleantisy Planer</li>
+                        <li class="list-item" data-mark="✅">Moduł Grywalizacji</li>
+                        <li class="list-item" data-mark="✅">Cleantisy Planer</li>
                     </ul>
-                    
-                    <div style="
-                        width: 501px;
-                        height: 0px;
-                        border-top: 1px solid #9EA2A4;
-                        opacity: 1;
-                        margin-left: 1.8rem; 
-                        margin-right: 1.8rem;
-                        margin-top: 0.5rem">
-                    </div>
+
+                    <div class="normal-horizontal-line"></div>
 
                     <h2 style="font-size: 64px; color: #45BBD9; font-weight: bold; margin-top: 2rem">18,99 zł</h2>
-                    <h3 style="font-size: 24px; color: #45BBD9; font-weight: normal; margin-bottom: 2rem">per gospodarstwo domowe</h3>
-                    <p style="
-                        font-size: 20px; 
-                        color: #828889; 
-                        font-weight: normal; 
-                        width: 501px; 
-                        margin: 0 auto 2rem; 
-                        text-align: center;">
+                    <h3 style="font-size: 24px; color: #45BBD9; font-weight: normal; margin-bottom: 2rem">per
+                        gospodarstwo domowe</h3>
+                    <p style="font-size: 20px; color: #828889; font-weight: normal; width: 501px; margin: 0 auto 2rem; text-align: center;">
                         W Cleantisy nie uznajemy subskrypcji i abonamentów. Oddajemy ci tę aplikację w pełni, na zawsze
                         za jednorazową opłatą.
                     </p>
@@ -561,7 +325,8 @@
         <div class="normal-section-column">
             <div class="normal-box-align-left">
                 <div class="normal-box-column" style="text-align: center;">
-                    <h2 style="font-size: 72px; color: #FFFFFF; font-weight: bold; margin-bottom: 1rem">Pobierz teraz</h2>
+                    <h2 style="font-size: 72px; color: #FFFFFF; font-weight: bold; margin-bottom: 1rem">Pobierz
+                        teraz</h2>
                     <div>
                         <a href="#home" class="transform-button-ending">Spraw, żeby sprzątanie domu było proste</a>
                     </div>
@@ -571,11 +336,11 @@
     </div>
 </section>
 
-<footer class="footer-section" style="background-color: #155566; padding: 1.5rem 5rem; display: flex; justify-content: space-between; align-items: center; width: 100%">
+<footer class="footer-section">
     <div class="footer-logo">
-        <img src="logo.png" alt="Farlime Solutions Logo" style="height: 50px;">
+        <img src="logo.png" alt="Farlime Solutions Logo">
     </div>
-    <div class="footer-text" style="font-family: 'Roboto Mono', monospace; font-size: 20px; font-weight: 400; line-height: 26.38px; letter-spacing: -0.04em; text-align: center; color: #45BBD9; text-underline-position: from-font; text-decoration-skip-ink: none;">
+    <div class="footer-text">
         Farlime Solutions 2025
     </div>
 </footer>
