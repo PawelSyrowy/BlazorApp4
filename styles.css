@@ -279,11 +279,23 @@ body {
 }
 
 .list-item::before {
-    content: attr(data-mark);
+    content: "";
     position: absolute;
     left: 0;
-    top: 0;
     font-size: 20px;
+    width: 20px;
+    height: 20px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.list-item[data-mark="check_circle"]::before {
+    background-image: url('check_circle.png');
+}
+
+.list-item[data-mark="cancel"]::before {
+    background-image: url('cancel.png');
 }
 
 .list-item-special-1::after,
@@ -310,7 +322,6 @@ body {
     padding: 25px 100px;
     font-size: 28px;
     font-weight: bold;
-    cursor: crosshair !important;
     transition: all 0.3s ease;
     display: inline-block;
     text-align: center;
