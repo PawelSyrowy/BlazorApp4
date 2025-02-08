@@ -1,0 +1,28 @@
+﻿.text-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+    padding: 0 0 1.5rem 0;
+}
+
+.text-center {
+    text-align: center;
+    justify-content: start;
+    width: auto;
+    max-width: 750px;
+}
+
+.text-left {
+    text-align: left;
+    width: 100%;
+}
+
+.word-wrapper {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.text-center-wrapper {
+    align-content: center;
+}

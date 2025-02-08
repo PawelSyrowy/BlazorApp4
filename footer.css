@@ -1,0 +1,29 @@
+﻿.footer-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-section-container {
+    padding: 1.5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1875px;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+.footer-text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}

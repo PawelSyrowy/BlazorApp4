@@ -1,0 +1,108 @@
+﻿.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.card-container .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: center;
+    width: 550px;
+    border: 2px solid #AAE0EE;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+}
+
+.card-container .card-personal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: left;
+    width: 500px;
+    border: 0.1rem solid #AAE0EE;
+    border-radius: 2rem;
+}
+
+.card-container .card-debil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: center;
+    width: 500px;
+    border: 0.1rem solid #AAE0EE;
+    border-radius: 2rem;
+}
+
+.card-container .card-meble {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: left;
+    width: 550px;
+    height: 475px;
+    border: 0.1rem solid #AAE0EE;
+    border-radius: 2rem;
+}
+
+.card-container .card-meble .meble-content {
+}
+
+.card-container .card-meble .gupek {
+    height: 55%;
+    margin-top: auto;
+}
+
+.personal-content {
+    padding: 0.6rem 0;
+}
+
+.personal-content-1 {
+    padding: 1rem 0;
+}
+
+.personal-content-2 {
+    padding: 1.2rem 0;
+}
+
+/* When screen is smaller than 550px */
+@media (max-width: 550px) {
+    .card {
+        width: 90%; /* Adjust width relative to the screen */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .card-personal {
+        width: 90%; /* Adjust width relative to the screen */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-debil {
+        width: 90%; /* Adjust width relative to the screen */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-meble {
+        width: 90%; /* Adjust width relative to the screen */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
