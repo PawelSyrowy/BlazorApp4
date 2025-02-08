@@ -34,8 +34,8 @@
 }
 
 .card-container .card-screenshot .card-middle img {
-    height: auto;
     object-fit: contain;
+    max-width: 100%;
 }
 
 .card-container .card-screenshot .card-bottom {
