@@ -1,4 +1,11 @@
-﻿.circle-number {
+﻿.circle-container {
+    padding-bottom: 1rem;
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.circle-number {
     width: 82px;
     height: 82px;
     border-radius: 50%;
@@ -11,6 +18,14 @@
     align-items: center;
     position: relative;
     z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 110%;
+    height: 2px;
 }
 
 .horizontal-line {

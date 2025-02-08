@@ -8,42 +8,45 @@
     column-gap: 2rem;
 }
 
-.card-container .card {
+.card-container .card-screenshot {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
     align-self: flex-start;
     text-align: center;
-    width: 550px;
-    border: 2px solid #AAE0EE;
-    border-radius: 2rem;
-    background-color: #FFFFFF;
-}
-
-.card-container .card-personal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-self: flex-start;
-    text-align: left;
-    width: 500px;
+    min-height: 875px;
+    max-width: 550px;
     border: 0.1rem solid #AAE0EE;
     border-radius: 2rem;
 }
 
-.card-container .card-debil {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-self: flex-start;
-    text-align: center;
-    width: 500px;
-    border: 0.1rem solid #AAE0EE;
-    border-radius: 2rem;
+.card-container .card-screenshot .card-top {
+    padding: 1rem 0;
 }
+
+.card-container .card-screenshot .card-top h3 {
+    margin-top: 2rem; font-size: 40px; font-weight: bold; 
+}
+
+.card-container .card-screenshot .card-middle {
+    padding: 1.2rem 0;
+}
+
+.card-container .card-screenshot .card-middle img {
+    height: auto;
+    object-fit: contain;
+}
+
+.card-container .card-screenshot .card-bottom {
+    margin: auto 2rem 0 2rem;
+    padding: 1.2rem 0;
+    flex-grow: 1;
+    align-content: center;
+}
+
+.card-container .card-screenshot .card-bottom p {
+    font-size: 24px;}
 
 .card-container .card-meble {
     display: flex;
@@ -53,55 +56,112 @@
     align-self: flex-start;
     text-align: left;
     width: 550px;
-    height: 475px;
+    min-height: 475px;
     border: 0.1rem solid #AAE0EE;
     border-radius: 2rem;
 }
 
-.card-container .card-meble .meble-content {
+.card-container .card-meble .card-top img {
+    object-fit: fill;
+    margin: 2.5rem 2rem 1rem 2rem;
 }
 
-.card-container .card-meble .gupek {
+.card-container .card-meble .card-middle {
+    flex-grow: 1;
+    margin: 0 2rem 0 2rem;
+    align-content: center;
+}
+
+.card-container .card-meble .card-middle h3 {
+    font-size: 40px
+}
+
+.card-container .card-meble .card-bottom {
+    margin: auto 2rem 0 2rem;
+    padding-bottom: 2rem;
     height: 55%;
-    margin-top: auto;
+    align-content: center;
 }
 
-.personal-content {
+.card-container .card-meble .card-bottom p {
+    font-size: 24px;
+}
+
+.card-container .card-personal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: left;
+    max-width: 550px;
+    min-height: 350px;
+    border: 0.1rem solid #AAE0EE;
+    border-radius: 2rem;
+}
+
+.card-container .card-personal .card-top {
     padding: 0.6rem 0;
 }
 
-.personal-content-1 {
-    padding: 1rem 0;
+.card-container .card-personal .card-top img {
+    object-fit: fill;
+    margin: 3rem 2rem 0 2rem;
 }
 
-.personal-content-2 {
-    padding: 1.2rem 0;
+.card-container .card-personal .card-middle {
+    padding: 0.6rem 0;
 }
 
-/* When screen is smaller than 550px */
+.card-container .card-personal .card-middle h3 {
+    font-size: 20px;
+    margin: 0 2rem 0 2rem;
+}
+
+.card-container .card-personal .card-bottom {
+    padding: 0.6rem 0;
+}
+
+.card-container .card-personal .card-bottom p {
+    font-size: 20px;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.card-container .card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-self: flex-start;
+    text-align: center;
+    width: 550px;
+    max-width: 550px;
+    border: 2px solid #AAE0EE;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+}
+
 @media (max-width: 550px) {
-    .card {
-        width: 90%; /* Adjust width relative to the screen */
+    .card-screenshot {
+        width: 90% !important;
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-@media (max-width: 500px) {
-    .card-personal {
-        width: 90%; /* Adjust width relative to the screen */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .card-debil {
-        width: 90%; /* Adjust width relative to the screen */
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    
     .card-meble {
-        width: 90%; /* Adjust width relative to the screen */
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-personal {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-list {
+        width: 90% !important;
         margin-left: auto;
         margin-right: auto;
     }

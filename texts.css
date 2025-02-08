@@ -23,6 +23,12 @@
     word-wrap: break-word;
 }
 
-.text-center-wrapper {
-    align-content: center;
+.text-container h2 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 24px;
+    font-weight: lighter
 }

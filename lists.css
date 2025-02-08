@@ -1,4 +1,28 @@
-﻿.list-item {
+﻿.card-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+.card-list li {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.card-list h3 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 3rem
+}
+
+.card-list p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.list-item {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
