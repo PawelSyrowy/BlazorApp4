@@ -1,6 +1,7 @@
 ﻿.circle-container {
     padding-bottom: 1rem;
     width: 100%;
+    max-width: 550px;
     position: relative;
     text-align: center;
 }
@@ -24,16 +25,23 @@
     position: absolute;
     top: 45%;
     left: 0;
-    width: 110%;
+    width: 100%;
     height: 2px;
 }
 
 .horizontal-line {
-    width: auto;
     height: 0;
     border-top: 1px solid #9EA2A4;
     opacity: 1;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
     margin-top: 0.5rem;
+}
+
+@media (max-width: 550px) {
+    .circle-container {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
