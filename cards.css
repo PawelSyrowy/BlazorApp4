@@ -26,7 +26,9 @@
 }
 
 .card-container .card-screenshot .card-top h3 {
-    margin-top: 2rem; font-size: 40px; font-weight: bold; 
+    margin-top: 2rem;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .card-container .card-screenshot .card-middle {
@@ -46,7 +48,8 @@
 }
 
 .card-container .card-screenshot .card-bottom p {
-    font-size: 24px;}
+    font-size: 24px;
+}
 
 .card-container .card-meble {
     display: flex;
@@ -56,18 +59,18 @@
     align-self: flex-start;
     text-align: left;
     width: 550px;
-    min-height: 475px;
+    min-height: 425px;
     border: 0.1rem solid #AAE0EE;
     border-radius: 2rem;
 }
 
 .card-container .card-meble .card-top img {
+    display: flex;
     object-fit: fill;
     margin: 2.5rem 2rem 1rem 2rem;
 }
 
 .card-container .card-meble .card-middle {
-    flex-grow: 1;
     margin: 0 2rem 0 2rem;
     align-content: center;
 }
@@ -77,9 +80,11 @@
 }
 
 .card-container .card-meble .card-bottom {
-    margin: auto 2rem 0 2rem;
-    padding-bottom: 2rem;
-    height: 55%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    flex-grow: 1;
     align-content: center;
 }
 
@@ -147,7 +152,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .card-meble {
         width: 90% !important;
         margin-left: auto;
