@@ -23,6 +23,7 @@ body {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
 }
 
 .home-content {
@@ -30,6 +31,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
+    max-width: 1875px;
 }
 
 .box-align-left {

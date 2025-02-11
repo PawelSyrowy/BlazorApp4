@@ -1,6 +1,6 @@
 ﻿.circle-container {
     padding-bottom: 1rem;
-    width: 30%;
+    width: 100%;
     position: relative;
     text-align: center;
 }
@@ -20,9 +20,9 @@
     z-index: 1;
 }
 
-.circle {
+.circle-line {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
     width: 110%;
     height: 2px;
