@@ -33,16 +33,18 @@
     margin-left: 1rem;
 }
 
+.home-text-container h1{
+    margin-left: 1rem;
+}
+
 .text-container h2 {
     font-size: 72px;
     font-weight: bold;
-    margin-left: 1rem;
 }
 
 .text-container p {
     font-size: 24px;
     font-weight: lighter;
-    margin-left: 1rem;
 }
 
 @media (max-width: 480px) {
