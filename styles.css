@@ -22,16 +22,25 @@ body {
     width: 100%;
     display: flex;
     position: relative;
-    align-items: center;
     justify-content: center;
+    max-width: 2090px;
 }
 
 .home-content {
-    width: 100%;
+    min-width: 60%;
     display: flex;
     position: relative;
     justify-content: center;
-    max-width: 1875px;
+}
+
+.home-image {
+    max-width: 40%;
+    width: auto;
+    display: flex;
+    position: relative;
+    flex-grow:1;
+    align-items: stretch;
+    background-image: url('img1.png');
 }
 
 .box-align-left {
@@ -51,31 +60,6 @@ body {
     position: relative;
     align-items: center;
     justify-content: space-between;
-}
-
-.transform-button {
-    text-decoration: none;
-    margin-left: 1rem;
-    background-color: white;
-    color: #1C7287;
-    border: 2px solid #238EA9;
-    border-radius: 12px;
-    padding: 25px 125px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.transform-button:hover {
-    background-color: #88D4E7;
-    color: #1C7287;
-    transform: scale(1.01);
-}
-
-.home-image {
-    max-width: 40%;
-    height: 100%;
-    object-fit: contain;
 }
 
 /*sekcje*/

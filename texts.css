@@ -23,6 +23,15 @@
     word-wrap: break-word;
 }
 
+.home-text-container{
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+.home-text-container h1{
+    font-size: 96px;
+    font-weight: bold;
+}
+
 .text-container h2 {
     font-size: 72px;
     font-weight: bold;
@@ -31,4 +40,19 @@
 .text-container p {
     font-size: 24px;
     font-weight: lighter
+}
+
+@media (max-width: 480px) {
+    .home-text-container h1{
+        font-size: 72px;
+        font-weight: bold;
+    }
+    .text-container h2
+    {
+        font-size: 52px;
+    }
+    .text-container p
+    {
+        font-size: 16px;
+    }
 }

@@ -34,6 +34,10 @@
     background-color: #45BBD9;
 }
 
+.background-color-crystallightblue {
+    background-color: #88D4E7;
+}
+
 .color-white {
     color: #FFFFFF;
 }
@@ -68,4 +72,8 @@
 
 .color-crystalblue {
     color: #45BBD9;
+}
+
+.color-crystallightblue {
+    color: #88D4E7;
 }

@@ -1,4 +1,27 @@
-﻿.invite-button {
+﻿.main-button {
+    text-decoration: none;
+    margin-left: 1rem;
+    background-color: white;
+    color: #1C7287;
+    border: 2px solid #238EA9;
+    border-radius: 12px;
+    padding: 1rem 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    max-width: 500px;
+}
+
+.main-button:hover {
+    background-color: #88D4E7;
+    color: #1C7287;
+    transform: scale(1.01);
+}
+
+.invite-button {
     text-decoration: none;
     margin-left: 1rem;
     background-color: white;
