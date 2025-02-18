@@ -80,3 +80,9 @@ body {
     width: 100%;
     max-width: 1875px;
 }
+
+@media (max-width: 480px) {
+    .section {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+}

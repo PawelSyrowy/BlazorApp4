@@ -19,6 +19,7 @@
     max-width: 550px;
     border: 0.1rem solid #AAE0EE;
     border-radius: 2rem;
+    background-color:red;
 }
 
 .card-container .card-screenshot .card-top {
@@ -62,6 +63,7 @@
     min-height: 425px;
     border: 0.1rem solid #AAE0EE;
     border-radius: 2rem;
+    background-color:red;
 }
 
 .card-container .card-meble .card-top img {
